@@ -1,0 +1,53 @@
+h1
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    text-align: center;
+    color: violet;
+    font-size: xx-large;
+    border-style: solid;
+
+}
+
+h2
+{
+    color: purple;
+    text-align: left;
+    text-decoration-style: solid;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    margin-left: 5%;
+}
+
+.city
+{
+    font-size: large;
+    margin-left: 5%;
+    color: green;
+}
+
+.cost
+{
+    font-size: large;
+    margin-left: 5%;
+    color: red;
+}
+
+.num
+{
+    color: royalblue;
+}
+
+.fchoice
+{
+    font-size: x-large;
+    font-weight: bold;
+    color: purple;
+}
+
+.schoice
+{
+    font-size: x-large;
+    font-weight: bold;
+    color: purple;
+}
+

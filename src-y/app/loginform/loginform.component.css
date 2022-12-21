@@ -1,0 +1,23 @@
+h1
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    text-align: center;
+    color: violet;
+    font-size: xx-large;
+    border-style: solid;
+
+}
+
+h2
+{
+    text-align: center;
+    color: green;
+    font-size: x-large;
+}
+
+form
+{
+    align-self: center;
+    font-size: large;
+}
+

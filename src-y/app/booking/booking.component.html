@@ -1,0 +1,55 @@
+<br>
+<a routerLink="/loginform"><= Back to Login</a>
+<br>
+<h1>BOOK YOUR FLIGHT</h1>
+
+<div class="FlightList">
+    <h2>Available Flights</h2>
+    <div *ngFor="let l of FlightAvailList">
+        <div class="avails">
+            <p class="num">Flight Number: <b>{{l.id}}</b>
+            <p class="city">From: <b>{{l.Source}}</b> To: <b>{{l.Destination}}</b></p>
+            <p class="cost">Cost per ticket => <b>{{l.Price}}</b></p>
+        </div>
+        <br>
+    </div>
+</div>
+<br>
+<form #login="ngForm">
+    <div class="fchoice">Choose your flight:
+        <select #fnum>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+        </select>
+    </div>
+    <br><br>
+    <div class="schoice">Number of seats: (Max 8)
+        <select #snum>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+        </select>
+    </div>
+    <br>
+
+    <button    (click)="BookTicket(fnum,snum)" [disabled]="!login.form.valid">Confirm</button>
+
+</form>
+    
+<br>
+<form #login="ngForm">
+    <label>Enter ID</label>
+    <input #ID="ngModel" type="number" name="ID" ngModel >
+    <label>Enter src</label>
+    <input #src="ngModel" type="text" name="src" ngModel>
+
+    <input type="submit" (click)="search(ID,src)">
+
+</form>
+<br><br><br> 

@@ -1,0 +1,21 @@
+<br>
+<a routerLink="/loginform"><= Back to Login</a>
+<br>
+<br>
+
+<h1>Flight Booking History</h1>
+
+<div class="FlightList">
+    <h2>Past Flights</h2>
+    <div *ngFor="let l of FlightHistory">
+        <div class="avails">
+            <p class="city">From: <b>{{l.Source}}</b> To: <b>{{l.Destination}}</b></p>
+            <p class="seats">Number of Seats=> <b>{{l.Seats}}</b></p>
+            <p class="seats">Final Bill=> <b>{{l.Bill}}</b></p>
+
+        </div>
+        <br>
+    </div>
+</div>
+<br>
+

@@ -1,0 +1,22 @@
+<h1>FLIGHT BOOKING LOGIN PAGE</h1>
+
+<div style="text-align: center;">
+    <h2>Enter Your Details</h2>
+    <form #login="ngForm" (ngSubmit) = "submit(login.value)" #myForm="ngForm">
+        <div>
+            <div>
+                <input #emailInput="ngModel" type="email" name="email" id="loginEmail" required placeholder="Email address"  ngModel>
+            </div>
+            <br>
+            <div>
+                <input #passordInput = "ngModel" required type="password" name="password" id="loginPassword" placeholder="Password" ngModel>
+            </div>
+            <br>
+            <div>
+                <button [disabled]="!myForm.form.valid">Login</button>
+            </div>
+        </div>
+        
+        
+    </form>
+</div>
