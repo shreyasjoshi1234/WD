@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Booking</title>
+
+</head>
+
+<body>
+
+    <style>
+    .flights{
+        text-align: center;
+        border:2px;
+        border-radius: 15%;
+        background-color: blue;
+        margin-left: 20%;
+        margin-right: 20%;
+        
+    }
+    .form{
+        text-align: center;
+        border:2px;
+        border-color: aqua;
+
+    }
+    </style>
+
+    <h1>Flight Booking</h1>
+    <div >
+    <div class="flights">
+    <h3>ID: 1</h3>
+    <h4>src:H1</h4>
+    <h4>Dest:H2</h4>
+    <h4>price:100</h4>
+    </div>
+
+    <div class="flights">
+        <h3>ID: 2</h3>
+        <h4>src:H3</h4>
+        <h4>Dest:H4</h4>
+        <h4>price:100</h4>
+        </div>
+
+    <div class="flights">
+        <h3>ID: 3</h3>
+        <h4>src:H5</h4>
+        <h4>Dest:H6</h4>
+        <h4>price:100</h4>
+        </div>
+
+        <div class="flights">
+            <h3>ID: 4</h3>
+            <h4>src:H7</h4>
+            <h4>Dest:H8</h4>
+            <h4>price:100</h4>
+            </div>
+
+            </div>
+
+            <br>
+            <br>
+
+            <form class="form" action="/booked" method="POST">
+                <h2>Book Flights</h2>
+                <br>
+                <label>Name</label>
+                <input type="text" name="cname"> 
+                <br>
+                <br>
+                <label>Enter ID to book flight</label>
+                <input type="ID" name="cID"> 
+                <br>
+                <br>
+
+                <label>Total tickets</label>
+                <input type="number" name="ctno"> 
+                <br>
+                <br>
+                <input type="submit" value="Book now">
+
+            </form>
+
+            <br>
+
+            <form class="form" action="/edit" method="POST">
+                <h2>Edit details</h2>
+                <label>Enter ID</label>
+                <input type="number" name="ID">
+                <br>
+                <label>Enter new price</label>
+                <input type="number" name="newpr">
+                <br>
+                <label>Enter new destination</label>
+                <input type="text" name="newdest">
+                <br>
+                <br>
+                <input type="submit" value="Edit">
+
+            </form>
+
+            <form class="form" action="/search" method="POST">
+                <h2>Search</h2>
+                <label>Enter Name</label>
+                <input type="text" name="name">
+                <br>
+                <br>
+                <input type="submit" value="Search">
+
+            </form>
+</body>
+</html>
+

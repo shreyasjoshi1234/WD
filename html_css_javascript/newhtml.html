@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <title>HTML PRO</title>
+    <script src="newjs.js"></script>
+    <link rel="stylesheets" href="1.css">
+</head>
+
+<body>
+    <section>
+    <form id="form">
+        <p>Signup</p>
+    <label>
+        Name
+    </label>
+    <input type="text" id="name">
+    <p id="emptyname"></p>
+
+    <label>
+        Password
+    </label>
+    <input type="text" id="password">
+    <p id="emptypassword"></p>
+    <br>
+    
+    <!-- <label>
+        Number
+    </label>
+    <input type="number" id="num">
+    <p id="emptynum"></p> -->
+    
+    <input type="submit" value="submit" onclick="adduser()">
+    
+    </form>
+
+    <br>
+    
+    <form id="form00">
+        <p>login</p>
+
+        <label>
+            Name
+        </label>
+        <input type="text" id="uname">
+        <!-- <p id="emptyname"></p> -->
+    <br>
+    <br>
+
+        <label>
+            Password
+        </label>
+        <input type="text" id="up">
+        <!-- <p id="emptypassword"></p> -->
+        <br>
+    <br>
+        
+        <input type="submit" value="submit" onclick="existing()">
+        
+        </form>
+    
+        <br>
+        
+        <!-- <input type="submit" value="Display" onclick="display()"> -->
+    <input type="submit" value="Display" onclick="getdata()">
+
+    <p id="datadisplay"></p>
+    
+    <p id="last"></p>
+    </section>
+    <section>
+        <h2>Update data</h2>
+        <label for="">Name</label>
+        <input type="text" name="oldname" id="oldname">
+        <br>
+        <label for="">New password</label>
+        <input type="password" name="new" id="newpassword">
+        <br>
+        <input type="submit" onclick="update()">
+    </section>
+</body>
+</html>

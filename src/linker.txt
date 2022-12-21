@@ -1,0 +1,83 @@
+<p>linker component</p>
+
+<h1>Linker component </h1>
+
+<h2>Here comes pass1 and pass2</h2>
+<form class="assemblerform" name="form"  #form="ngForm" >
+<h2>Name</h2>
+<input #name type="text" name="name" ngModel>
+<h2>Age</h2>
+<input #age type="number" name="age" ngModel>
+<h2>Email</h2>
+<input #email type="email" name="email" ngModel>
+<h2>Range</h2>
+<input #range type="range" name="range" ngModel>
+<h2>Pass1</h2>
+<input #p1 type="radio" name="p" value="p1"    ngModel>
+<h2>Pass2</h2>
+<input #p2 type="radio" name="p" value="p2"  ngModel>
+<br>
+<br>
+
+<select #option name="option" ngModel>
+   
+    <option>SIC/XE</option >
+    <option>SIC</option>
+
+</select>
+<br>
+<br>
+
+<button type="submit" name="button" (click)="select(name,age,email,range,p1,p2,option)"  >Submit</button>
+</form>
+
+<br>
+<br>
+<br>
+<br>
+<h2>{{namehere}}</h2>
+<h2>{{namehere}}</h2>
+
+<h2>{{namehere}}</h2>
+
+<h2>{{namehere}}</h2>
+
+<h2>{{namehere}}</h2>
+
+<h2>{{namehere}}</h2>
+
+<!-- Lists, storing data  and form validation -->
+
+
+
+
+
+
+export class LinkerComponent  {
+
+  constructor(private router: Router) {
+  console.log("Linker Constructor");   
+
+   }
+
+   namehere:string="";
+  select(name:any,age:any,email:any,range:any,p1:any,p2:any,option:any)
+  {
+    name=name.value;
+    age=age.value;
+    email=email.value;
+    range=range.value;
+    var p1=p1.value;
+    var p2=p2.value;
+    option=option.value;
+    console.log(name);
+    console.log(age);
+    console.log(email);
+    console.log(range);
+    console.log(p1);
+    console.log(p2);
+    console.log(option);
+  this.namehere=name;
+    // service data is string all names and emails 
+  }
+}

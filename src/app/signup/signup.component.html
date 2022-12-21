@@ -1,0 +1,20 @@
+<h2>Signup:Add new User</h2>
+
+<form #loginform="ngForm" (ngSubmit)="signup(loginform.value)" name="form" NgModel>
+
+        <label>
+            Username
+        </label>
+        <input type="text" name="username" ngModel>
+        <br>
+        <br>
+
+        <label>
+            Password
+        </label>
+        <input type="password" name="password" ngModel>
+        <br>
+        <br>
+
+        <input type="submit" name="button" ndModel>
+</form>

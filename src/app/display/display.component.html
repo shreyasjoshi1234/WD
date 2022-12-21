@@ -1,0 +1,88 @@
+
+<div>
+<a routerLink="login">BackToLogin</a>
+</div>
+<div *ngFor="let s of locallist">
+
+    <div>
+        <h2>Name: {{s.name}}</h2>
+        <h2>SSN: {{s.usn}}</h2>
+        <h2>ID: {{s.ID}}</h2>
+        <h2>Issued: {{s.issued}}</h2>
+    </div>
+    <hr>
+
+</div>
+
+<br>
+<br>
+<br>
+<div>
+
+    <h1>Add new student</h1>
+    <form #form="ngForm" name="form" >
+        <label>
+            Name
+        </label>
+        <input #name="ngModel" type="text" name="name" ngModel>
+        <br>
+        <label>
+            USN
+        </label>
+        <input #usn="ngModel" type="text" name="usn" ngModel>
+        <br>
+        <label>
+            ID
+        </label>
+        <input #ID="ngModel" type="number" name="ID" ngModel>
+        <br>
+        <label>
+            Issued
+        </label>
+        <input #issued="ngModel" type="number" name="issued" ngModel>
+        <br>
+        <br>
+
+        <input value="submit" (click)="add(name.value,usn.value,ID.value,issued.value)" type="button"  name="button"  ngModel>
+
+    </form>
+</div>
+
+<hr>
+<div>
+
+    <h1>Edit student details</h1>
+    <form #form="ngForm" name="form" >
+        
+       
+        <label>
+           Enter ID
+        </label>
+        <input #Id="ngModel" type="number" name="ID" ngModel>
+        <br>
+        <label>
+           New Issued
+        </label>
+        <input #Issued="ngModel" type="number" name="issued" ngModel>
+        <br>
+        <br>
+
+        <input value="submit" (click)="update(Id.value,Issued.value)" type="submit"  name="button"  ngModel>
+
+    </form>
+</div>
+
+
+<div>
+    <h1>Delete student</h1>
+    <form #form="ngForm" name="form" >
+        <label>
+           Enter ID
+           </label>
+        <input #IDdel="ngModel" type="number" name="issued" ngModel>
+        <br>
+        <br>
+        <input value="submit" (click)="deletestu(IDdel.value)" type="submit"  name="submit"  ngModel>
+
+    </form>
+</div>
